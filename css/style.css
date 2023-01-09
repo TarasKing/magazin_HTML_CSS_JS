@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Luckiest+Guy&display=swap');
+
+/* Content */
+/* Header */
+/* Body */
+/* Images */
+/* Footer */
+/* Buttons */
+/* Search */
+/* Navigation */
+/* Tablet */
+    /* Tablet-Footer */
+/* Desktop */
+    /* Desktop-Body */
+
+/* Header */
+
+.allMenu {
+    display: none;
+}
+.show-menu {
+    display: block;
+}
+.menu-article {
+    display: none;
+}
+
+.show-menu-article {
+    display: block;
+}
+ul li:hover {
+    background: linear-gradient(150deg, #ffc0cb, #ff778e);
+}
+/* I have to special set background for ul inside li element */
+ul {
+    background-color: blanchedalmond;
+}
+li ul {
+    background-color: blanchedalmond;
+}
+
+/* Body */
+html {
+    font-size: 1.3rem;
+    font-family: "DM Sans", sans-serif;
+    min-width: 450px;
+    margin: 0;
+    height: 100vh;
+}
+body {
+     max-width: 600px;
+     margin:0 auto 0 auto;
+}
+
+ a {
+    font-family: "Luckiest Guy", sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;  
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    box-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;
+}
+h1, h2, h3, h4 {
+    font-family: "Luckiest Guy", sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;
+    box-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;
+    background: linear-gradient(150deg, #ffc0cb, #ff778e);
+    padding: 1rem 0 0.5rem 1rem;
+    margin: 0;
+}
+
+td, th {
+    border: 1px solid black;
+    min-width: 300px;
+}
+thead {
+    position:sticky;
+    top: 0;
+}
+thead tr th {
+    font-family: "Luckiest Guy", sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;  
+}
+table {
+    border-spacing: 0px;
+    max-width: 1200px;
+    width: 100%;
+    overflow-x: scroll;
+    display: block;
+    background: blanchedalmond;
+    box-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;
+    margin: .5rem;
+}
+
+article {
+    text-align: justify;
+    box-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;
+    margin: 1rem .5rem 1rem .5rem;
+    background-color: blanchedalmond;
+}
+article p {
+    padding: 0.5rem;
+}
+
+
+/* Images */
+html {
+    background-image: url(../images/okeykat-w6elADh_jww-unsplash.jpg);
+    /* if the image is unvailable use this */
+    background-color: #ffc0cb;
+    background-size: cover;
+}
+article img {
+  width: 200px;
+
+}
+td img {
+    
+   width: 300px; 
+}
+img {
+    float: left;
+    margin: .5rem 1rem 1rem 1rem;
+    max-width: 300px;
+    box-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;
+}
+/* Footer */
+footer {
+    font-size: 1rem;
+}
+footer article ul{
+    padding: 1rem;
+}
+
+/* Buttons */
+button {
+    background: linear-gradient(150deg, #ffc0cb, #ff778e);
+    font-family: "Luckiest Guy", sans-serif;
+    padding: .5rem;
+    box-shadow: 0 0 0.4em #1c2aeb;
+    color: white;
+    text-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb; 
+}
+/* Search */
+
+form#formSearch {
+    display: grid;
+    grid-template-columns: 30% 55% 15%;
+    background: linear-gradient(150deg, #ffc0cb, #ff778e);
+    padding: .2rem;
+    box-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;
+}
+
+form input {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+form label {
+    font-family: "Luckiest Guy", sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb;  
+    padding: 0.5rem 0rem 0rem 1rem;
+    font-size: 1.5rem;
+}
+form#requestForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: .5rem;
+}
+div#emailForm {
+    grid-column: span 3;
+}
+div#textAreaForm {
+    grid-row: 2;
+    grid-column: span 3;
+}
+form#requestForm button{
+    grid-row: 3;
+    grid-column: 1;
+    max-height: 50px;
+    font-family: "Luckiest Guy", sans-serif;
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000000, 0 0 1em #1c2aeb, 0 0 0.4em #1c2aeb; 
+    margin: .5rem;
+}
+
+form#requestForm label {
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr;
+    grid-template-rows: 50px 50px;
+}
+
+form#requestForm label span {
+    grid-column: 1/2;
+    grid-row: 1;
+    padding: 0;
+    margin: 0;
+    font-size: .8rem;
+}
+
+form#requestForm label input {
+    grid-row: 2;
+    grid-column: span 2;
+    padding: 0;
+
+}
+form#requestForm label textarea {
+    grid-row: 2;
+    grid-column: span 2;
+
+}
+
+/* Navigation */
+#menu_button {
+    margin: 1rem;
+}
+#navigation {
+    position: sticky;
+    top: 0;
+}
+
+
+/* Tablet */
+@media screen and (min-width:600px) {
+    body {
+        max-width: 800px;
+
+    }
+    article img {
+        width: 300px;
+    }
+    /* Tablet-Footer */
+    footer {
+        font-size: 0.7rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer article#author ul {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    
+    }
+    footer article#author ul li {
+        grid-row:  span 1;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width:900px) {
+    body {
+        max-width: 1000px;
+    }
+    article img {
+        width: 350px;
+    } 
+
+    #menu_button {
+        margin: 1rem;
+        display: none;
+    }
+    .allMenu {
+        display: block;
+    }
+    
+     /* Desktop-Body */
+     main#firstPageMain {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+     main#firstPageMain  h2 {
+         grid-column: span 2;
+     }
+     main#firstPageMain  nav {
+         grid-column: span 2;
+     }
+
+     #firstColumn {
+         grid-column: span 2;      
+     }
+
+    form#requestForm button{
+        max-height: 90px;
+        font-size: 1.5rem;
+    }
+    form#requestForm label p {
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 1.5rem;
+    
+    }
+    form#requestForm label input {
+        grid-row: 1;
+        grid-column: 2;
+    
+    }
+    form#requestForm label textarea {
+        grid-row: span 2;
+        grid-column: 2;
+    
+    }
+}

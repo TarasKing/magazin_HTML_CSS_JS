@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://kit.fontawesome.com/5f54bf1d3b.js" crossorigin="anonymous"></script>
+    <script src="../js/main.js" defer></script>
+    <title>Contacts</title>
+</head>
+<body>
+        <header>
+            <h1><a href="../index.html">Dog's magazin Project</a></h1>
+            <form action="#" method="GET" id="formSearch">
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="search query">
+                <button><i class="fas fa-search"></i></button>
+            </form>
+        <nav>
+            <button id="menu_button"><i class="fas fa-bars"></i>Menu</button>
+            <ul id="Menu" class="allMenu">
+                <li><a href="../index.html">Home</a></li>
+                <li id="article_button"><a href="#">Articles</a>  
+                    <ul id="articleMenu" class="menu-article">
+                        <li><a href="cavalier_king_charles_spaniel.html">Cavalier King Charles Spaniel</a></li>
+                        <li><a href="golden_retriever.html">Golden Retriever</a></li>
+                        <li><a href="caucasian_shepherd_dog.html">Caucasian Shepherd Dog</a></li>
+                        <li><a href="german_shepherd.html">German Shepherd</a></li>
+                        <li><a href="beagle.html">Beagle</a></li>
+                        <li><a href="collie.html">Collie</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="sourses.html">Sourses</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Contacs</h2>
+        <form action="https://formspree.io/f/mayvwpyz" method="POST" id="requestForm">
+            <div id="emailForm">
+                <label>
+                   <span>Your email:</span> 
+                    <input type="email" name="_replyto" >
+                </label>
+            </div><br>
+            <div id="textAreaForm">
+                <label>
+                    <span>Your message:</span>  
+                    <textarea name="message" rows="4" cols="55" ></textarea>
+                </label>
+             </div>
+  <button type="submit">Send</button>
+        </form>
+        <p>Working throuth API Form of: <a href="https://formspree.io">https://formspree.io</a></p>
+        </article>
+    </main>
+    <footer>
+        <article id="contacts">
+            <h4><a href="contacts.html">Contacts</a></h4>
+            <ul>
+                <li><a href="tel:+12365128475">Telephone: +1-236-512-8475</a></li>
+                <li><a href="mailto:tivanov@langara.ca">Email: tivanov@langara.ca</a></li>
+            </ul>
+        </article>
+        <article id="social_media">
+            <h4>Social media</h4>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/taras-ivanov-a59514144/"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/taras.ivanov.338"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+            </ul>
+        </article>
+        <article id="author">
+            <h4>Author</h4>
+            <ul>
+                <li><a href="resume.html">Resume</a> </li>
+            </ul>
+        </article>
+        <p>Source of Icons: <a href="https://fontawesome.com/">https://fontawesome.com/</a></p>
+    </footer>
+</body>
+</html>
